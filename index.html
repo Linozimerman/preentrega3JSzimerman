@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>BibliotecAPP</title>
+  </head>
+  <body>
+    <h1 id="titulo"><span>BibliotecAPP</span></h1>
+    <hr />
+    <h2 id="secundario">Mantene tu biblioteca ordenada</h2>
+
+    <main>
+
+      <div id="biblioteca" class="card-container"></div>
+
+
+      <div>
+      <form id="formulario">
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" name="categoria">
+          <option value="movie">Película</option>
+          <option value="book">Libro</option>
+        </select>
+        <br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="autor">Autor:</label>
+        <input type="text" id="autor" name="autor">
+        <br>
+        <label for="precio">Precio:</label>
+        <input type="number" id="precio" name="precio">
+        <br>
+        <label for="imagen">Imagen:</label>
+        <input type="text" id="imagen" name="imagen">
+        <br>
+        <label for="genero">Género:</label>
+        <input type="text" id="genero" name="genero">
+        <br>
+        <label for="existencia">Existencia:</label>
+        <select id="existencia" name="exitencia">
+          <option value="quiero">Quiero</option>
+          <option value="tengo">Tengo</option>
+        </select>
+        <br>
+        <label for="year">Año:</label>
+        <input type="number" id="year" name="year">
+        <br>
+        <button type="submit">Agregar</button>
+      </form>
+    </div>
+      
+
+    <div>
+      <label for="search">Buscar</label>
+      <input type="text" name="search" value="" id="search" />
+      <button id="btnSearch" class="btn btn-search">Buscar</button>
+    </div>
+    <div id="resultado"></div>
+
+    
+    
+
+    <div>
+      <label for="filter">Filtrar</label>
+      <input type="text" name="filter" value="" id="filter" />
+      <button id="btnfilter" class="btn btn-filter">buscar</button>
+    </div>
+
+    <div>
+      <label for="eliminate">Eliminar entrada</label>
+      <input type="text" name="eliminate" value="" id="eliminate" />
+      <button id="btnEliminate" class="btn btn-eliminate">buscar</button>
+    </div>
+
+
+      <div id="contenedor">
+        <!-- contenido dinamico -->
+      </div>
+
+
+
+      <h2>Ingreso</h2>
+      <form id="form-login">
+        <input type="text" placeholder="Usuario" id="user" />
+        <input type="password" placeholder="Password" id="pass" />
+        <div class="check">
+          <label for="check">Recordar</label>
+          <input type="checkbox" id="check" />
+          <p id="message"></p>
+        </div>
+        <input
+          type="submit"
+          class="btn btn-login"
+          value="Ingresar"
+          id="login"
+        />
+      </form>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
+
+
